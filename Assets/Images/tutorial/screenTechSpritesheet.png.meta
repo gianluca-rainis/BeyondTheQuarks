@@ -1,0 +1,548 @@
+fileFormatVersion: 2
+guid: aed443a1be0ac4718bcd9a3c0261df15
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -8732899210951406285
+    second: screenTechSpritesheet_0
+  - first:
+      213: 6291236630252529933
+    second: screenTechSpritesheet_1
+  - first:
+      213: -3941752710871253468
+    second: screenTechSpritesheet_2
+  - first:
+      213: 2979717928773244190
+    second: screenTechSpritesheet_3
+  - first:
+      213: -8807584825849231372
+    second: screenTechSpritesheet_4
+  - first:
+      213: -231499599049694518
+    second: screenTechSpritesheet_5
+  - first:
+      213: 6439889929153464902
+    second: screenTechSpritesheet_6
+  - first:
+      213: -534818413322800961
+    second: screenTechSpritesheet_7
+  - first:
+      213: -6609147765400110748
+    second: screenTechSpritesheet_8
+  - first:
+      213: -8698237904205801336
+    second: screenTechSpritesheet_9
+  - first:
+      213: 1174151885644606807
+    second: screenTechSpritesheet_10
+  - first:
+      213: 7867972871559283485
+    second: screenTechSpritesheet_11
+  - first:
+      213: -7028271739485149453
+    second: screenTechSpritesheet_12
+  - first:
+      213: 1030102079089981992
+    second: screenTechSpritesheet_13
+  - first:
+      213: -6009890670734911496
+    second: screenTechSpritesheet_14
+  - first:
+      213: 5074611673980145757
+    second: screenTechSpritesheet_15
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: screenTechSpritesheet_0
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 118
+        width: 292
+        height: 132
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 33dc3ffbf628ec680800000000000000
+      internalID: -8732899210951406285
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: screenTechSpritesheet_1
+      rect:
+        serializedVersion: 2
+        x: 304
+        y: 118
+        width: 292
+        height: 132
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d09a0200266fe4750800000000000000
+      internalID: 6291236630252529933
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: screenTechSpritesheet_2
+      rect:
+        serializedVersion: 2
+        x: 604
+        y: 118
+        width: 292
+        height: 132
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 42ef5143bc41c49c0800000000000000
+      internalID: -3941752710871253468
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: screenTechSpritesheet_3
+      rect:
+        serializedVersion: 2
+        x: 904
+        y: 118
+        width: 292
+        height: 132
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e1554634ba51a5920800000000000000
+      internalID: 2979717928773244190
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: screenTechSpritesheet_4
+      rect:
+        serializedVersion: 2
+        x: 1204
+        y: 118
+        width: 292
+        height: 132
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4f7c226f34c25c580800000000000000
+      internalID: -8807584825849231372
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: screenTechSpritesheet_5
+      rect:
+        serializedVersion: 2
+        x: 1504
+        y: 118
+        width: 292
+        height: 132
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ac26ff8575c89ccf0800000000000000
+      internalID: -231499599049694518
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: screenTechSpritesheet_6
+      rect:
+        serializedVersion: 2
+        x: 1804
+        y: 118
+        width: 292
+        height: 132
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 64acec345c51f5950800000000000000
+      internalID: 6439889929153464902
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: screenTechSpritesheet_7
+      rect:
+        serializedVersion: 2
+        x: 2104
+        y: 118
+        width: 292
+        height: 132
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fb07e869c71f398f0800000000000000
+      internalID: -534818413322800961
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: screenTechSpritesheet_8
+      rect:
+        serializedVersion: 2
+        x: 2404
+        y: 118
+        width: 292
+        height: 132
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4697247cf179744a0800000000000000
+      internalID: -6609147765400110748
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: screenTechSpritesheet_9
+      rect:
+        serializedVersion: 2
+        x: 2704
+        y: 118
+        width: 292
+        height: 132
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 88899fb16b6a94780800000000000000
+      internalID: -8698237904205801336
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: screenTechSpritesheet_10
+      rect:
+        serializedVersion: 2
+        x: 3004
+        y: 118
+        width: 292
+        height: 132
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 75da3384bec6b4010800000000000000
+      internalID: 1174151885644606807
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: screenTechSpritesheet_11
+      rect:
+        serializedVersion: 2
+        x: 3304
+        y: 118
+        width: 292
+        height: 132
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d1383bfe3a7a03d60800000000000000
+      internalID: 7867972871559283485
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: screenTechSpritesheet_12
+      rect:
+        serializedVersion: 2
+        x: 3604
+        y: 118
+        width: 292
+        height: 132
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3f6221f1710967e90800000000000000
+      internalID: -7028271739485149453
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: screenTechSpritesheet_13
+      rect:
+        serializedVersion: 2
+        x: 3904
+        y: 118
+        width: 292
+        height: 132
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 82abc8a1268ab4e00800000000000000
+      internalID: 1030102079089981992
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: screenTechSpritesheet_14
+      rect:
+        serializedVersion: 2
+        x: 4204
+        y: 118
+        width: 292
+        height: 132
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8f759e7d644989ca0800000000000000
+      internalID: -6009890670734911496
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: screenTechSpritesheet_15
+      rect:
+        serializedVersion: 2
+        x: 4504
+        y: 118
+        width: 292
+        height: 132
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d5013a85e64ac6640800000000000000
+      internalID: 5074611673980145757
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 23a96f6e9c62f4c99b98b2b9b1409bdd
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries:
+      - key: SpriteEditor.SliceSettings
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":1.0,"y":1.0},"gridSpriteSize":{"x":64.0,"y":64.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":0,"keepEmptyRects":false,"isAlternate":false}'
+    nameFileIdTable:
+      screenTechSpritesheet_0: -8732899210951406285
+      screenTechSpritesheet_1: 6291236630252529933
+      screenTechSpritesheet_10: 1174151885644606807
+      screenTechSpritesheet_11: 7867972871559283485
+      screenTechSpritesheet_12: -7028271739485149453
+      screenTechSpritesheet_13: 1030102079089981992
+      screenTechSpritesheet_14: -6009890670734911496
+      screenTechSpritesheet_15: 5074611673980145757
+      screenTechSpritesheet_2: -3941752710871253468
+      screenTechSpritesheet_3: 2979717928773244190
+      screenTechSpritesheet_4: -8807584825849231372
+      screenTechSpritesheet_5: -231499599049694518
+      screenTechSpritesheet_6: 6439889929153464902
+      screenTechSpritesheet_7: -534818413322800961
+      screenTechSpritesheet_8: -6609147765400110748
+      screenTechSpritesheet_9: -8698237904205801336
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
