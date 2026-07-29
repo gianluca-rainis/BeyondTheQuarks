@@ -1,14 +1,12 @@
-# Pro License
+# Beyond the Quarks License
 
-Copyright (c) 2026 Pro Games Studio
+Copyright (c) 2026 Gianluca Rainis
 
 ---
 
 # Definitions
 For the purposes of this license, the following terms are defined as follows:
-- **"Pro Games Studio"** refers to the organization that owns and oversees this Project.
-- **"Project Team"** refers to the group of individuals who have actively contributed to the development of this specific Project and have been admitted to the team in accordance with the contribution process described in `CONTRIBUTING.md`.
-- **"Author"** refers collectively to Pro Games Studio and the Project Team. The Author is the sole rights holder and the only party authorized to grant exceptions to the terms of this license.
+- **"Author"** refers to the owner of the project. The Author is the sole rights holder and the only party authorized to grant exceptions to the terms of this license.
 - **"Project"** refers to all materials covered by this license, including but not limited to: source code, game assets, graphics, audio, design files, and documentation.
 - **"Build"** refers to any compiled, packaged, executable, or installable version of the Project, whether modified or unmodified.
 - **"Derivative Work"** is defined in Section 2.1.
@@ -100,4 +98,4 @@ This license shall be governed by and construed in accordance with the laws of I
 
 IN NO EVENT SHALL THE AUTHOR BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, LOSS OF USE, DATA, OR PROFITS), HOWEVER CAUSED AND UNDER ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE), ARISING IN ANY WAY OUT OF THE USE OF THIS PROJECT.
 
-### **Version 1.3 - 2026-06-03**
+### **Version 1.5 - 2026-07-29**
