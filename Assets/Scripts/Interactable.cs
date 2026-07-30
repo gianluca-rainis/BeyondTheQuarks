@@ -16,12 +16,12 @@ public class Interactable : MonoBehaviour
             col.isTrigger = true;
         }
     }
- 
+
     void Awake()
     {
         ShowPrompt(false);
     }
- 
+
     public void ShowPrompt(bool show)
     {
         if (promptIcon != null)
@@ -29,7 +29,7 @@ public class Interactable : MonoBehaviour
             promptIcon.SetActive(show);
         }
     }
- 
+
     public void Interact()
     {
         onInteract?.Invoke();

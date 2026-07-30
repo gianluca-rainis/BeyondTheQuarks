@@ -9,7 +9,7 @@ public class PlayerInteractor : MonoBehaviour
 
     [Header("Input")]
     public InputActionReference interactAction;
-    
+
     private Interactable currentInteractable;
 
     void OnEnable()
@@ -17,46 +17,50 @@ public class PlayerInteractor : MonoBehaviour
         if (interactAction != null)
         {
             interactAction.action.Enable();
-            interactAction.action.performed += OnInteractPerformed;
         }
     }
- 
+
     void OnDisable()
     {
         if (interactAction != null)
         {
-            interactAction.action.performed -= OnInteractPerformed;
             interactAction.action.Disable();
         }
     }
- 
+
     void Update()
     {
         Interactable closest = FindClosestInteractable();
- 
+
         if (closest != currentInteractable)
         {
             if (currentInteractable != null)
             {
                 currentInteractable.ShowPrompt(false);
+                Dialoguemanager.Instance?.Hide();
             }
- 
+
             if (closest != null)
             {
                 closest.ShowPrompt(true);
             }
- 
+
             currentInteractable = closest;
         }
+
+        if (interactAction != null && interactAction.action.WasPressedThisFrame())
+        {
+            currentInteractable?.Interact();
+        }
     }
- 
+
     Interactable FindClosestInteractable()
     {
         Collider2D[] hits = Physics2D.OverlapCircleAll(transform.position, interactRadius, interactableLayer);
- 
+
         Interactable closest = null;
         float closestDist = float.MaxValue;
- 
+
         foreach (Collider2D hit in hits)
         {
             Interactable interactable = hit.GetComponent<Interactable>();
@@ -65,24 +69,19 @@ public class PlayerInteractor : MonoBehaviour
             {
                 continue;
             }
- 
+
             float dist = Vector2.Distance(transform.position, hit.transform.position);
-            
+
             if (dist < closestDist)
             {
                 closestDist = dist;
                 closest = interactable;
             }
         }
- 
+
         return closest;
     }
- 
-    void OnInteractPerformed(InputAction.CallbackContext ctx)
-    {
-        currentInteractable?.Interact();
-    }
- 
+
     void OnDrawGizmosSelected()
     {
         Gizmos.color = Color.yellow;
