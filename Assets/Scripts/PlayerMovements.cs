@@ -13,15 +13,19 @@ public class PlayerMovements : MonoBehaviour
 
     [Header("Sprites")]
     public SpriteRenderer spriteRenderer;
+    public bool gotQUARK = false;
 
     [Tooltip("Walk frames - down")]
     public Sprite[] frontalWalkFrames;
+    public Sprite[] frontalWalkFramesNoQUARK;
 
     [Tooltip("Walk frames - up")]
     public Sprite[] backWalkFrames;
+    public Sprite[] backWalkFramesNoQUARK;
 
     [Tooltip("Walk frames - side")]
     public Sprite[] sideWalkFrames;
+    public Sprite[] sideWalkFramesNoQUARK;
 
     [Header("Animation")]
     public float framesPerSecond = 8f;
@@ -158,15 +162,15 @@ public class PlayerMovements : MonoBehaviour
         switch (dir)
         {
             case FacingDirection.Down:
-                return frontalWalkFrames;
+                return gotQUARK ? frontalWalkFrames : frontalWalkFramesNoQUARK;
 
             case FacingDirection.Up:
-                return backWalkFrames;
+                return gotQUARK ? backWalkFrames : backWalkFramesNoQUARK;
 
             case FacingDirection.Left:
             case FacingDirection.Right:
-                return sideWalkFrames;
-                
+                return gotQUARK ? sideWalkFrames : sideWalkFramesNoQUARK;
+
             default:
                 return frontalWalkFrames;
         }
