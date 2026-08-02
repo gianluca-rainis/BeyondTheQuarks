@@ -13,6 +13,18 @@ public class StageIntroSequence : MonoBehaviour
 
     public Transform playerStagePosition;
 
+    [Header("QUARK Pickup")]
+    public QUARKPickupInteraction quark;
+    public GameObject portalOpener;
+
+    [Header("Return")]
+    public Transform playerReturnPosition;
+
+    [Header("Pedestal")]
+    public Transform pedestal;
+    public Transform pedestalTargetPosition;
+    public float pedestalMoveDuration = 1.5f;
+
     [Header("Speech")]
     [TextArea]
     public string[] speechLines;
@@ -23,9 +35,15 @@ public class StageIntroSequence : MonoBehaviour
 
     private bool triggered;
 
+    void Awake()
+    {
+        portalOpener?.SetActive(false);
+    }
+
     void Reset()
     {
         Collider2D col = GetComponent<Collider2D>();
+        
         if (col != null)
         {
             col.isTrigger = true;
@@ -81,15 +99,58 @@ public class StageIntroSequence : MonoBehaviour
 
         DialogueManager.Instance?.Hide();
 
-        if (player != null)
-        {
-            player.enableMovement = true;
-        }
+        player.SetFacing(FacingDirection.Up);
 
         if (playerInteractor != null)
         {
             playerInteractor.enabled = true;
         }
+
+        if (quark != null)
+        {
+            yield return new WaitUntil(() => quark == null);
+        }
+
+        if (playerInteractor != null)
+        {
+            playerInteractor.enabled = false;
+        }
+
+        if (pedestal != null && pedestalTargetPosition != null)
+        {
+            yield return MovePedestal();
+        }
+
+        if (player != null && playerReturnPosition != null)
+        {
+            yield return player.MoveTo(playerReturnPosition.position);
+
+            player.SetFacing(FacingDirection.Up);
+        }
+
+        portalOpener?.SetActive(true);
+
+        if (playerInteractor != null)
+        {
+            playerInteractor.enabled = true;
+        }
+    }
+
+    IEnumerator MovePedestal()
+    {
+        Vector3 startPos = pedestal.position;
+        Vector3 endPos = pedestalTargetPosition.position;
+        float elapsed = 0f;
+
+        while (elapsed < pedestalMoveDuration)
+        {
+            elapsed += Time.deltaTime;
+            pedestal.position = Vector3.Lerp(startPos, endPos, elapsed / pedestalMoveDuration);
+
+            yield return null;
+        }
+
+        pedestal.position = endPos;
     }
 
     IEnumerator WaitForAdvance()

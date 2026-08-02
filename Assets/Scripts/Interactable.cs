@@ -6,6 +6,7 @@ public class Interactable : MonoBehaviour
 {
     public UnityEvents.UnityEvent onInteract;
     public GameObject promptIcon;
+    public bool oneTimeUse = false;
 
     void Reset()
     {
@@ -32,6 +33,12 @@ public class Interactable : MonoBehaviour
 
     public void Interact()
     {
+        if (oneTimeUse)
+        {
+            enabled = false;
+            promptIcon?.SetActive(false);
+        }
+
         onInteract?.Invoke();
     }
 }
