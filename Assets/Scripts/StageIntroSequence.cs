@@ -64,6 +64,8 @@ public class StageIntroSequence : MonoBehaviour
         if (player != null && playerStagePosition != null)
         {
             yield return player.MoveTo(playerStagePosition.position);
+
+            player.SetFacing(FacingDirection.Down);
         }
 
         if (advanceAction != null)

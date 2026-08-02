@@ -14,7 +14,7 @@ public class PlayerMovements : MonoBehaviour
 
     [Header("Sprites")]
     public SpriteRenderer spriteRenderer;
-    public bool gotQUARK = false;
+    public bool gotQUARK = true;
     public bool enableMovement = true;
 
     [Tooltip("Walk frames - down")]
@@ -75,6 +75,22 @@ public class PlayerMovements : MonoBehaviour
         }
  
         moveInput = Vector2.zero;
+    }
+
+    public void SetFacing(FacingDirection direction)
+    {
+        facing = direction;
+
+        if (spriteRenderer != null)
+        {
+            Sprite[] frames = GetFramesForFacing(facing);
+
+            if (frames != null && frames.Length > 0)
+            {
+                spriteRenderer.flipX = facing == FacingDirection.Left;
+                spriteRenderer.sprite = frames[0];
+            }
+        }
     }
 
     void ReadInput()
