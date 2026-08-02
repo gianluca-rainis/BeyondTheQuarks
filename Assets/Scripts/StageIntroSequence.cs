@@ -134,6 +134,11 @@ public class StageIntroSequence : MonoBehaviour
         {
             playerInteractor.enabled = true;
         }
+
+        if (player != null)
+        {
+            player.enableMovement = true;
+        }
     }
 
     IEnumerator MovePedestal()
