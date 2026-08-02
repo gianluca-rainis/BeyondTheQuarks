@@ -1,5 +1,6 @@
 using UnityEngine;
 using UnityEngine.InputSystem;
+using System.Collections;
 
 public enum FacingDirection
 {
@@ -14,6 +15,7 @@ public class PlayerMovements : MonoBehaviour
     [Header("Sprites")]
     public SpriteRenderer spriteRenderer;
     public bool gotQUARK = false;
+    public bool enableMovement = true;
 
     [Tooltip("Walk frames - down")]
     public Sprite[] frontalWalkFrames;
@@ -50,7 +52,11 @@ public class PlayerMovements : MonoBehaviour
 
     void Update()
     {
-        ReadInput();
+        if (enableMovement)
+        {
+            ReadInput();
+        }
+        
         UpdateFacing();
         AnimateSprite();
     }
@@ -58,6 +64,17 @@ public class PlayerMovements : MonoBehaviour
     void FixedUpdate()
     {
         rb.linearVelocity = moveInput * moveSpeed;
+    }
+
+    public IEnumerator MoveTo(Vector2 targetPosition, float arriveThreshold = 0.05f)
+    {
+        while (Vector2.Distance(transform.position, targetPosition) > arriveThreshold)
+        {
+            moveInput = (targetPosition - (Vector2)transform.position).normalized;
+            yield return null;
+        }
+ 
+        moveInput = Vector2.zero;
     }
 
     void ReadInput()
