@@ -30265,7 +30265,7 @@ GameObject:
   - component: {fileID: 1371264976}
   - component: {fileID: 1371264975}
   m_Layer: 8
-  m_Name: ImportantPeople (35)
+  m_Name: NASAAdmin
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -30300,7 +30300,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::NpcDialogue
   lines:
+  - (NASA administrator) We built Q.U.A.R.K. from the ground up in our own labs,
+    and tonight the whole world finally gets to see why it mattered.
+  - (NASA administrator) This agency put a man on the Moon over half a century ago.
+    Tonight we're opening the door to entire universes.
   - (NASA administrator) This is bigger than the space program ever dared to dream.
+  - (NASA administrator) Every dollar, every delay, every skeptic in Congress, all
+    of it led to this exact moment on this exact stage.
 --- !u!114 &1371264976
 MonoBehaviour:
   m_ObjectHideFlags: 0
