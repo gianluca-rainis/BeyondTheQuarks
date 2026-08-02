@@ -23,15 +23,9 @@ public class StageIntroSequence : MonoBehaviour
 
     private bool triggered;
 
-    void Awake()
-    {
-        barrier?.SetActive(false);
-    }
-
     void Reset()
     {
         Collider2D col = GetComponent<Collider2D>();
-
         if (col != null)
         {
             col.isTrigger = true;
@@ -72,6 +66,11 @@ public class StageIntroSequence : MonoBehaviour
             yield return player.MoveTo(playerStagePosition.position);
         }
 
+        if (advanceAction != null)
+        {
+            advanceAction.action.Enable();
+        }
+
         foreach (string line in speechLines)
         {
             Dialoguemanager.Instance?.Show(line);
@@ -94,7 +93,7 @@ public class StageIntroSequence : MonoBehaviour
     IEnumerator WaitForAdvance()
     {
         yield return null;
- 
+
         while (advanceAction == null || !advanceAction.action.WasPressedThisFrame())
         {
             yield return null;

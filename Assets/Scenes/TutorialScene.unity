@@ -25348,7 +25348,20 @@ MonoBehaviour:
   barrier: {fileID: 213731343}
   playerStagePosition: {fileID: 529774985}
   speechLines:
-  - Hi
+  - Thank you all for being here. My name is Dr. Elena Voss, and I'm the lead scientist
+    behind this project.
+  - 'For years, everything we''re about to show you existed only on paper: equations,
+    simulations, theories. Nobody outside this building believed in.'
+  - Tonight, that changes. Today, humanity takes its first real step beyond the world
+    it has always known.
+  - Behind me is Q.U.A.R.K., the device you've heard about in every briefing, every
+    report, every closed-door meeting that brought you into this room.
+  - In a few moments, it will open a door to somewhere no human being has ever set
+    foot.
+  - Every great leap humanity has taken began the same way, with someone brave enough
+    to go first, and the rest of us watching, holding our breath.
+  - Today, that person stands right here among us.
+  - The stage is yours. Let's make history.
   advanceAction: {fileID: 1781555164194001046, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
   playerTag: Player
 --- !u!61 &1072531267
@@ -41451,6 +41464,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::Dialoguemanager
   dialoguePanel: {fileID: 1382677425}
   dialogueText: {fileID: 1191727746}
+  typingSpeed: 0.04
+  audioSource: {fileID: 196466439}
+  typingSounds:
+  - {fileID: 8300000, guid: 8e42ac3607f4f4d95bc7a7145a2e3ad1, type: 3}
+  - {fileID: 8300000, guid: 1f36fb997dd844463a2e4a36251e1bfc, type: 3}
+  - {fileID: 8300000, guid: 0114db70d4e3c4c05b9109da4e70d844, type: 3}
+  minSoundInterval: 0.05
 --- !u!1 &1968247998
 GameObject:
   m_ObjectHideFlags: 0
