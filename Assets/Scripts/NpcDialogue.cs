@@ -14,7 +14,13 @@ public class NpcDialogue : MonoBehaviour
             return;
         }
 
-        Dialoguemanager.Instance?.Show(lines[currentLine]);
+        if (DialogueManager.Instance != null && DialogueManager.Instance.IsTyping)
+        {
+            DialogueManager.Instance.SkipTyping();
+            return;
+        }
+
+        DialogueManager.Instance?.Show(lines[currentLine]);
         currentLine = (currentLine + 1) % lines.Length;
     }
 }

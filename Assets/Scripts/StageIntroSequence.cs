@@ -73,11 +73,11 @@ public class StageIntroSequence : MonoBehaviour
 
         foreach (string line in speechLines)
         {
-            Dialoguemanager.Instance?.Show(line);
+            DialogueManager.Instance?.Show(line);
             yield return WaitForAdvance();
         }
 
-        Dialoguemanager.Instance?.Hide();
+        DialogueManager.Instance?.Hide();
 
         if (player != null)
         {
@@ -94,9 +94,22 @@ public class StageIntroSequence : MonoBehaviour
     {
         yield return null;
 
-        while (advanceAction == null || !advanceAction.action.WasPressedThisFrame())
+        while (true)
         {
             yield return null;
+
+            if (advanceAction == null || !advanceAction.action.WasPressedThisFrame())
+            {
+                continue;
+            }
+
+            if (DialogueManager.Instance != null && DialogueManager.Instance.IsTyping)
+            {
+                DialogueManager.Instance.SkipTyping();
+                continue;
+            }
+
+            break;
         }
     }
 }

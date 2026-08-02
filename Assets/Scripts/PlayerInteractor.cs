@@ -37,7 +37,7 @@ public class PlayerInteractor : MonoBehaviour
             if (currentInteractable != null)
             {
                 currentInteractable.ShowPrompt(false);
-                Dialoguemanager.Instance?.Hide();
+                DialogueManager.Instance?.Hide();
             }
 
             if (closest != null)

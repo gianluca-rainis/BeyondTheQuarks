@@ -2,14 +2,15 @@ using UnityEngine;
 using TMPro;
 using System.Collections;
 
-public class Dialoguemanager : MonoBehaviour
+public class DialogueManager : MonoBehaviour
 {
-    public static Dialoguemanager Instance { get; private set; }
+    public static DialogueManager Instance { get; private set; }
 
     [Header("UI")]
     public GameObject dialoguePanel;
     public TMP_Text dialogueText;
 
+    [Header("Typing")]
     public float typingSpeed = 0.04f;
 
     [Header("Typing Sound")]
@@ -18,7 +19,7 @@ public class Dialoguemanager : MonoBehaviour
     public float minSoundInterval = 0.05f;
 
     public bool IsTyping { get; private set; }
- 
+
     private Coroutine typingCoroutine;
     private string currentFullLine = "";
     private float lastSoundTime = -1f;
@@ -70,6 +71,14 @@ public class Dialoguemanager : MonoBehaviour
 
     public void Hide()
     {
+        if (typingCoroutine != null)
+        {
+            StopCoroutine(typingCoroutine);
+            typingCoroutine = null;
+        }
+
+        IsTyping = false;
+
         if (dialoguePanel != null)
         {
             dialoguePanel.SetActive(false);
