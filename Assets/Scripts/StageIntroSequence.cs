@@ -30,6 +30,9 @@ public class StageIntroSequence : MonoBehaviour
     public string[] speechLines;
     public InputActionReference advanceAction;
 
+    [Header("Sounds")]
+    public AudioSource audioSource;
+
     [Header("Trigger")]
     public string playerTag = "Player";
 
@@ -63,6 +66,8 @@ public class StageIntroSequence : MonoBehaviour
         {
             barrier.SetActive(true);
         }
+
+        audioSource?.Stop();
 
         StartCoroutine(SequenceRoutine());
     }

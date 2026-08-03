@@ -2387,6 +2387,81 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
   m_BlendShapeWeights: []
+--- !u!1 &63582135
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 63582138}
+  - component: {fileID: 63582137}
+  - component: {fileID: 63582136}
+  m_Layer: 5
+  m_Name: FadePanel
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!114 &63582136
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 63582135}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Image
+  m_Material: {fileID: 0}
+  m_Color: {r: 0, g: 0, b: 0, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 10907, guid: 0000000000000000f000000000000000, type: 0}
+  m_Type: 1
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &63582137
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 63582135}
+  m_CullTransparentMesh: 1
+--- !u!224 &63582138
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 63582135}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1949889525}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
+  m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &69765493
 GameObject:
   m_ObjectHideFlags: 0
@@ -6896,7 +6971,7 @@ AudioSource:
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 0}
-  m_Resource: {fileID: 8300000, guid: c6decbbc2c3e727429a90cc716700501, type: 3}
+  m_Resource: {fileID: 8300000, guid: f4bd78f402b734f6c966e3fcea82bc75, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 1
   m_Pitch: 1
@@ -12881,7 +12956,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::QuarkMultiverseTravel
   portal: {fileID: 475068969}
-  targetMultiverse: FirstMultiverse
+  targetMultiverse: FirstMultiverseTransition
+  audioSource: {fileID: 196466439}
+  PortalSound: {fileID: 8300000, guid: 56ba9a155108d415da00c236fed128a6, type: 3}
+  QUARKActivationSound: {fileID: 8300000, guid: 78beddfcc7a2842d7abf4d92f1d2190d, type: 3}
 --- !u!61 &475068976
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -15122,7 +15200,6 @@ GameObject:
   - component: {fileID: 631079068}
   - component: {fileID: 631079071}
   - component: {fileID: 631079070}
-  - component: {fileID: 631079069}
   m_Layer: 8
   m_Name: PortalOpener
   m_TagString: Untagged
@@ -15146,20 +15223,6 @@ Transform:
   - {fileID: 44035730}
   m_Father: {fileID: 1167563355}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &631079069
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 631079067}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ae18eda9436c64de38d121d90a50c936, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::QuarkMultiverseTravel
-  portal: {fileID: 475068969}
-  targetMultiverse: 
 --- !u!114 &631079070
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -15175,7 +15238,7 @@ MonoBehaviour:
   onInteract:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 631079069}
+      - m_Target: {fileID: 475068974}
         m_TargetAssemblyTypeName: QuarkMultiverseTravel, Assembly-CSharp
         m_MethodName: ActivatePortal
         m_Mode: 1
@@ -25948,6 +26011,7 @@ MonoBehaviour:
   - Today, that person stands right here among us.
   - The stage is yours. Let's make history.
   advanceAction: {fileID: 1781555164194001046, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
+  audioSource: {fileID: 196466439}
   playerTag: Player
 --- !u!61 &1072531267
 BoxCollider2D:
@@ -41736,6 +41800,7 @@ GameObject:
   - component: {fileID: 1949889523}
   - component: {fileID: 1949889522}
   - component: {fileID: 1949889526}
+  - component: {fileID: 1949889527}
   m_Layer: 5
   m_Name: DialogueCanvas
   m_TagString: Untagged
@@ -41820,6 +41885,7 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1382677426}
+  - {fileID: 63582138}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
@@ -41848,6 +41914,20 @@ MonoBehaviour:
   - {fileID: 8300000, guid: 1f36fb997dd844463a2e4a36251e1bfc, type: 3}
   - {fileID: 8300000, guid: 0114db70d4e3c4c05b9109da4e70d844, type: 3}
   minSoundInterval: 0.05
+--- !u!114 &1949889527
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1949889521}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 87f8a75ba48615649ab7ddcad88f6a0d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::SceneTransition
+  fadePanel: {fileID: 63582136}
+  fadeDuration: 0.75
 --- !u!1 &1968247998
 GameObject:
   m_ObjectHideFlags: 0

@@ -14,5 +14,11 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/TutorialScene.unity
     guid: 867f5089fafd5804cb42e2ce7f797ba9
+  - enabled: 1
+    path: Assets/Scenes/Multiverses/FirstMultiverseTransition.unity
+    guid: 0274973e41af7453e978ca4d2d05dd84
+  - enabled: 1
+    path: Assets/Scenes/Multiverses/FirstMultiverse.unity
+    guid: 7318ce7d5315645529b0c51c64ab29f8
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}

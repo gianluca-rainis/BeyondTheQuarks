@@ -8,7 +8,7 @@ public class SceneTransition : MonoBehaviour
     public static SceneTransition Instance;
 
     public Image fadePanel;
-    public float fadeDuration = 0.5f;
+    public float fadeDuration = 0.75f;
 
     void Awake()
     {
@@ -22,12 +22,15 @@ public class SceneTransition : MonoBehaviour
 
     public IEnumerator FadeIn()
     {
+        fadePanel.gameObject.SetActive(true);
         yield return StartCoroutine(Fade(1f, 0f));
         fadePanel.raycastTarget = false;
+        fadePanel.gameObject.SetActive(false);
     }
 
     IEnumerator FadeAndLoad(string sceneName)
     {
+        fadePanel.gameObject.SetActive(true);
         fadePanel.raycastTarget = true;
         yield return StartCoroutine(Fade(0f, 1f));
         SceneManager.LoadScene(sceneName);

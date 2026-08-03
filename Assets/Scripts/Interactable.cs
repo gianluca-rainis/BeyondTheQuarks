@@ -36,6 +36,7 @@ public class Interactable : MonoBehaviour
         if (oneTimeUse)
         {
             enabled = false;
+            gameObject.SetActive(false);
             promptIcon?.SetActive(false);
         }
 
