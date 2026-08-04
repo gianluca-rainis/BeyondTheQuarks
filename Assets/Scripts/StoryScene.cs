@@ -161,6 +161,11 @@ public class StoryScene : MonoBehaviour
         float elapsed = 0f;
         Color c = fadePanel.color;
 
+        if (!fadePanel.IsActive())
+        {
+            fadePanel.gameObject.SetActive(true);
+        }
+
         while (elapsed < fadeDuration)
         {
             elapsed += Time.deltaTime;

@@ -205,6 +205,7 @@ GameObject:
   - component: {fileID: 468234308}
   - component: {fileID: 468234307}
   - component: {fileID: 468234306}
+  - component: {fileID: 468234309}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -286,6 +287,50 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &468234309
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 468234305}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a79441f348de89743a2939f4d699eac1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Unity.RenderPipelines.Universal.Runtime::UnityEngine.Rendering.Universal.UniversalAdditionalCameraData
+  m_RenderShadows: 1
+  m_RequiresDepthTextureOption: 2
+  m_RequiresOpaqueTextureOption: 2
+  m_CameraType: 0
+  m_Cameras: []
+  m_RendererIndex: -1
+  m_VolumeLayerMask:
+    serializedVersion: 2
+    m_Bits: 1
+  m_VolumeTrigger: {fileID: 0}
+  m_VolumeFrameworkUpdateModeOption: 2
+  m_RenderPostProcessing: 0
+  m_Antialiasing: 0
+  m_AntialiasingQuality: 2
+  m_StopNaN: 0
+  m_Dithering: 0
+  m_ClearDepth: 1
+  m_AllowXRRendering: 1
+  m_AllowHDROutput: 1
+  m_UseScreenCoordOverride: 0
+  m_ScreenSizeOverride: {x: 0, y: 0, z: 0, w: 0}
+  m_ScreenCoordScaleBias: {x: 0, y: 0, z: 0, w: 0}
+  m_RequiresDepthTexture: 0
+  m_RequiresColorTexture: 0
+  m_TaaSettings:
+    m_Quality: 3
+    m_FrameInfluence: 0.1
+    m_JitterScale: 1
+    m_MipBias: 0
+    m_VarianceClampScale: 0.9
+    m_ContrastAdaptiveSharpening: 0
+  m_Version: 2
 --- !u!1 &520497467
 GameObject:
   m_ObjectHideFlags: 0
@@ -498,8 +543,28 @@ MonoBehaviour:
   storyText: {fileID: 1411969930}
   fadePanel: {fileID: 520497468}
   slides:
-  - image: {fileID: -7255154345229648261, guid: 6987585edf5737e4b8bdab0c3da4c9c9, type: 3}
-    text: test
+  - image: {fileID: 4281637774074219296, guid: 9335309ccdced4e9eb457f99dfb8c159, type: 3}
+    text: 'The portal swallows you whole. The light bends in ways your mind can''t
+      process.
+
+      For a moment, you feel like a part of the multiverse itself.
+      You can sense the stars being born and dying, the universe expanding, civilizations
+      evolving. And you feel removed from it all.'
+  - image: {fileID: -2282313722000025630, guid: f446abeb71556484984940a16c3a2aa8, type: 3}
+    text: 'A warning light flashes on your wrist. Then another. Then, all at once.
+
+      Q.U.A.R.K.
+      shakes violently, and the wormhole around you begins to tear.'
+  - image: {fileID: -6732294965104032732, guid: 119948869f087488eb285e5542cdeb89, type: 3}
+    text: There's no above, no below, you no longer feel connected to the universes.
+      You're falling through the cracks of the multiverse.
+  - image: {fileID: 1474572238673864678, guid: 33d9f4503734b4d64872c9a492c84c32, type: 3}
+    text: 'Silence.
+
+      You open your eyes to a sky that shouldn''t exist. For
+      a moment, you can feel the very fabric of the multiverse itself, and it doesn''t
+      want you here. Something repels you, pulling you toward wherever you''re meant
+      to be. The universe is already sending you back.'
   typingSpeed: 0.04
   fadeDuration: 0.5
   nextScene: FirstMultiverse
