@@ -5,7 +5,7 @@ public class Player : MonoBehaviour
     public string playerName = "";
     public int health = 10;
 
-    public void SavePlayer(SaveData data)
+    public void SavePlayer(ref SaveData data)
     {
         data.playerName = playerName;
         data.health = health;

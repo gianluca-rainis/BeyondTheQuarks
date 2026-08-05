@@ -9,7 +9,7 @@ public class Resume : MonoBehaviour
             return;
         }
 
-        SaveData data = SaveSystem.LoadGame();
+        SaveData data = SaveSystem.GetSavedData();
 
         if (data == null)
         {

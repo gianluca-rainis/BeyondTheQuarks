@@ -12,5 +12,7 @@ public class SaveData
     
     public int health;
 
+    public int currentLevel;
+
     public List<string> inventoryItems = new List<string>();
 }

@@ -12,7 +12,7 @@ public class SaveSystem
         File.WriteAllText(path, json);
     }
 
-    public static SaveData LoadGame()
+    public static SaveData GetSavedData()
     {
         if (!SaveExists())
         {
