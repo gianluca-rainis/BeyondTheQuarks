@@ -6,7 +6,6 @@ using UnityEngine.UI;
 public class PauseMenu : MonoBehaviour
 {
     public GameObject PausePanel;
-    public GameObject optionsMenu;
     public Image quarkTable;
     public Player player;
 
@@ -43,7 +42,6 @@ public class PauseMenu : MonoBehaviour
         }
 
         PausePanel.SetActive(false);
-        optionsMenu.SetActive(false);
 
         playerMovements = player.GetComponent<PlayerMovements>();
     }
@@ -83,18 +81,6 @@ public class PauseMenu : MonoBehaviour
         isPaused = true;
 
         playerMovements.enableMovement = false;
-    }
-
-    public void OpenOptions()
-    {
-        optionsMenu.SetActive(true);
-        PausePanel.SetActive(false);
-    }
-
-    public void CloseOptions()
-    {
-        optionsMenu.SetActive(false);
-        PausePanel.SetActive(true);
     }
 
     public void SaveGame()
