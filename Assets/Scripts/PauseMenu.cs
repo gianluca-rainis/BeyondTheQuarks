@@ -2,11 +2,13 @@ using UnityEngine;
 using UnityEngine.InputSystem;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
+using UnityEngine.EventSystems;
 
 public class PauseMenu : MonoBehaviour
 {
     public GameObject PausePanel;
     public Image quarkTable;
+    public GameObject firstSlotInventory;
     public Player player;
 
     public Sprite[] quarkSprites;
@@ -81,6 +83,12 @@ public class PauseMenu : MonoBehaviour
         isPaused = true;
 
         playerMovements.enableMovement = false;
+
+        if (firstSlotInventory != null)
+        {
+            EventSystem.current.SetSelectedGameObject(null);
+            EventSystem.current.SetSelectedGameObject(firstSlotInventory);
+        }
     }
 
     public void SaveGame()
