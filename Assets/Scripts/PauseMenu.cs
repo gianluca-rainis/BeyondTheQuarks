@@ -8,6 +8,7 @@ public class PauseMenu : MonoBehaviour
 {
     public GameObject PausePanel;
     public Image quarkTable;
+    public InventoryUI inventoryUI;
     public GameObject firstSlotInventory;
     public Player player;
 
@@ -89,6 +90,8 @@ public class PauseMenu : MonoBehaviour
             EventSystem.current.SetSelectedGameObject(null);
             EventSystem.current.SetSelectedGameObject(firstSlotInventory);
         }
+
+        inventoryUI.Refresh();
     }
 
     public void SaveGame()

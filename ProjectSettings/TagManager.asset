@@ -7,6 +7,7 @@ TagManager:
   - Room
   - PlayerBody
   - PlayerDamageCollider
+  - Item
   layers:
   - Default
   - TransparentFX
